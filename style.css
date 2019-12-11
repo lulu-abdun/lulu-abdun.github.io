@@ -1,0 +1,184 @@
+/* TO DO
+-fix navbar
+-add image of me to take up full screen 
+-think about contact (form or social) DONE
+-add logo triangle 
+-write about me paragraph
+-add project photos
+-link project photos to github
+-add description and titles of projects 
+-figure out how to appear on scroll
+-change fonts 
+-text appearing like a flow or written out
+*/
+
+*{
+    font-family: 'Comfortaa', cursive;
+
+} 
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+    /* display:inline; */
+    /* justify-content: right;  */
+    position: fixed;
+    z-index: 100;
+    float: right;
+    /* flex-direction: row; */
+}
+
+/* Intro Section */
+
+.intro {
+    font-family: 'Comfortaa', cursive;
+    /* padding: 4rem; */
+    color: white;
+}
+
+.intro p {
+    font-size: 2rem;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 8rem;
+    margin: 2rem;
+}
+
+.intro span{
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.intro img {
+    width: 100%;
+}
+
+/* About Me */
+
+.about-me {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: blueviolet;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    height: 400px;
+    padding: 6rem;
+    margin-top: -4rem;
+    color: white;
+    transform: skewY(4deg);
+}
+
+.not-slanted {
+    -ms-transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+}
+
+.skills {
+    
+}
+
+/* Projects */
+
+.projects {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 4rem;
+}
+
+.projects img {
+    width: 550px;
+    height: 320px;
+}
+
+.project-name {
+    padding: 20px;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.project {
+    padding: 2rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Contact */
+
+.contact {
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skewY(-4deg);
+    background-color: blueviolet;
+    padding: 4rem;
+    /* height: 3rem; */
+    color: white;
+}
+
+.not-slanted2 {
+    -ms-transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+}
+
+#contact a {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+#contact {
+}
+
+#contact-options {
+    display: inline;
+    text-align: center;
+}
+
+/* #contact-options a {
+    list-style-type: none;
+} */
+
+/* Tools*/
+
+.what-tools {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.html {
+    color: palevioletred;
+}
+
+.css {
+    color: chartreuse;
+}
+
+.js {
+    color: mediumslateblue;
+}
+
+.comm-law {
+    color: orange;
+}
+
+/* Scroll Animation */
+
+/* End */
+
+.last {
+    background-color: blueviolet;
+    padding: 2rem;
+}
+
+
+
