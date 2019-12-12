@@ -8,7 +8,7 @@
 -link project photos to github
 -add description and titles of projects 
 -figure out how to appear on scroll
--change fonts 
+-change fonts DONE
 -text appearing like a flow or written out
 */
 
@@ -31,6 +31,18 @@ a {
     float: right;
     /* flex-direction: row; */
 }
+
+#my-name a{
+    font-weight: bold; 
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #32103b;
+}
+
+/* .nav-item a:active {
+    color: #32103b;
+} */
 
 /* Intro Section */
 
@@ -63,7 +75,7 @@ a {
 .about-me {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    background-color: blueviolet;
+    background-color: #32103b;
     top: 100px;
     left: 0px;
     right: 0px;
@@ -99,6 +111,12 @@ a {
 
 .project-name {
     padding: 20px;
+    color: #32103b;
+}
+
+.project-name:hover {
+    transform: rotate(4deg);
+    color: #aa48c1;
 }
 
 .projects a {
@@ -117,32 +135,46 @@ a {
 
 .contact {
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewY(-4deg);
-    background-color: blueviolet;
+    /* transform: skewY(-4deg); */
+    background-color: #32103b;
     padding: 4rem;
     /* height: 3rem; */
     color: white;
+    text-align: center;
 }
 
-.not-slanted2 {
+/* .not-slanted2 {
     -ms-transform: skewY(4deg);
     -webkit-transform: skewY(4deg);
     transform: skewY(4deg);
-}
+} */
 
 #contact a {
     text-decoration: none;
     list-style-type: none;
-
+    color: white; 
 }
+
+#contact a:hover {
+    transform: rotate(4deg);
+    color: #aa48c1;
+}
+
+/* #contact a:visited {
+    color: green;
+} */
 
 #contact {
 }
 
 #contact-options {
-    display: inline;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1rem;
 }
+
+
 
 /* #contact-options a {
     list-style-type: none;
@@ -171,13 +203,23 @@ a {
     color: orange;
 }
 
+.wordpress {
+    color: blue;
+}
+
+.squarespace {
+    color: olive;
+}
+
 /* Scroll Animation */
 
 /* End */
 
-.last {
-    background-color: blueviolet;
-    padding: 2rem;
+.handcrafted {
+    margin: .5rem;
+    text-align: center;
+    background-color: #32103b;
+    color: white;
 }
 
 
