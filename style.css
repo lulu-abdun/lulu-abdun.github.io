@@ -30,6 +30,23 @@ a {
     z-index: 100;
     float: right;
     /* flex-direction: row; */
+    color: white;
+}
+
+.mybg {
+    background-color: #32103b
+}
+
+.my-color {
+    color: white!important;
+}
+
+.my-color:hover {
+    color: #aa48c1!important;
+}
+
+.bg-icon {
+    background-color: white;
 }
 
 #my-name a{
@@ -84,16 +101,20 @@ a {
     margin-top: -4rem;
     color: white;
     transform: skewY(4deg);
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.about-me span {
+    color: #aa48c1;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .not-slanted {
     -ms-transform: skewY(-4deg);
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
-}
-
-.skills {
-    
 }
 
 /* Projects */
@@ -107,6 +128,12 @@ a {
 .projects img {
     width: 550px;
     height: 320px;
+}
+
+.projects img:hover{
+    opacity:0.5;
+    transform: scale(1.1);
+    transition: 0.7s;
 }
 
 .project-name {
@@ -216,7 +243,7 @@ a {
 /* End */
 
 .handcrafted {
-    margin: .5rem;
+    padding: .5rem;
     text-align: center;
     background-color: #32103b;
     color: white;
