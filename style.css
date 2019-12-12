@@ -61,7 +61,6 @@ a {
 
 .intro {
     font-family: 'Comfortaa', cursive;
-    /* padding: 4rem; */
     color: white;
 }
 
@@ -187,9 +186,6 @@ a {
     color: green;
 } */
 
-#contact {
-}
-
 #contact-options {
     display: flex;
     justify-content: space-around;
@@ -197,11 +193,6 @@ a {
     padding: 1rem;
 }
 
-
-
-/* #contact-options a {
-    list-style-type: none;
-} */
 
 /* Tools*/
 
