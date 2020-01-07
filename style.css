@@ -1,35 +1,53 @@
-/* TO DO
--fix navbar
--add image of me to take up full screen 
--think about contact (form or social) DONE
--add logo triangle 
--write about me paragraph
--add project photos
--link project photos to github
--add description and titles of projects 
--figure out how to appear on scroll
--change fonts DONE
--text appearing like a flow or written out
-*/
-
 *{
     font-family: 'Comfortaa', cursive;
-
 } 
 
 a {
     text-decoration: none;
 }
 
+img { max-width: 100%; height: auto; }
+
+
+/* Media Queries: General */
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {html {  
+    background: url('https://res.cloudinary.com/dcphly99o/image/upload/v1574790671/anas-alshanti-feXpdV001o4-unsplash_fucol2.jpg') no-repeat top center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {  
+    height:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}}
+
+/* @media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+} */
+
 /* Navbar */
 
 .navbar {
-    /* display:inline; */
-    /* justify-content: right;  */
     position: fixed;
     z-index: 100;
     float: right;
-    /* flex-direction: row; */
     color: white;
 }
 
@@ -120,10 +138,14 @@ a {
     padding: 4rem;
 }
 
-.projects img {
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+/* .projects img {
     width: 550px;
     height: 320px;
-}
+} */
 
 .projects img:hover{
     opacity:0.5;
