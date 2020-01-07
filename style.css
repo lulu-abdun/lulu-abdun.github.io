@@ -6,8 +6,14 @@ a {
     text-decoration: none;
 }
 
-img { max-width: 100%; height: auto; }
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
 
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
 /* Media Queries: General */
 
