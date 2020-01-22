@@ -6,7 +6,6 @@ a {
     text-decoration: none;
 }
 
-
 img { 
     max-width: 100%; 
     height: auto; 
@@ -15,8 +14,6 @@ img {
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-git img { max-width: 100%; height: auto; }
-
 
 /* Media Queries: General */
 
@@ -26,7 +23,7 @@ git img { max-width: 100%; height: auto; }
     #secondary { width:30%; margin-left:3%;}  
 }
 
-/* Media Queries: Tabled Portrait */
+/* Media Queries: Tablet Portrait */
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
@@ -44,6 +41,10 @@ body {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }}
+
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 760px) {
+
+} */
 
 /* @media (min-device-width:600px) {
     img[data-src-600px] {
@@ -96,7 +97,7 @@ body {
     position: absolute;
     left: 50px;
     top: 50px;
-    padding: 8rem;
+    
     margin: 2rem;
 }
 
@@ -107,7 +108,18 @@ body {
 
 .intro img {
     width: 100%;
+    background-size: cover;
 }
+
+/* Media Query for Small Screens
+@media only screen and (min-width: 300px) and (min-height: 500px) {
+    html {
+    background: url('https://res.cloudinary.com/dcphly99o/image/upload/v1574790671/anas-alshanti-feXpdV001o4-unsplash_fucol2.jpg') no-repeat top center fixed;
+    background-size: cover;
+}}
+
+Media Query for Medium Screens
+padding: 8rem; */
 
 /* About Me */
 
@@ -118,7 +130,7 @@ body {
     top: 100px;
     left: 0px;
     right: 0px;
-    height: 400px;
+    /* height: 400px; */
     padding: 6rem;
     margin-top: -4rem;
     color: white;
@@ -150,10 +162,11 @@ body {
 .responsive {
     width: 100%;
     height: auto;
-  }
+}
+
 /* .projects img {
-    width: 550px;
-    height: 320px;
+    width: 50rem;
+    height: 25rem;
 } */
 
 .projects img:hover{
@@ -190,7 +203,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* transform: skewY(-4deg); */
     background-color: #32103b;
-    padding: 4rem;
+    padding: 1rem;
     /* height: 3rem; */
     color: white;
     text-align: center;
@@ -224,6 +237,9 @@ body {
     padding: 1rem;
 }
 
+.contact li {
+    padding: 1rem;
+}
 
 /* Tools*/
 
